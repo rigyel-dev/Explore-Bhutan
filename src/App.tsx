@@ -1,16 +1,12 @@
-
-
-const App = () => {
+import NavBar from "./components/NavBar"
+import AppRoutes from "./components/AppRoutes"
 
 import './index.css'
 import { Box } from "@chakra-ui/react"
 import Footer from "./components/Footer"
 
-
 function App() {
   return (
-
-
     <Box minH="100vh" display="flex" flexDirection="column">
       <NavBar />
 
@@ -22,7 +18,6 @@ function App() {
       {/* Footer stays at the bottom */}
       <Footer />
     </Box>
-
   )
 }
 
