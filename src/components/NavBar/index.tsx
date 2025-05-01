@@ -1,16 +1,32 @@
+import { Box, HStack } from '@chakra-ui/react'
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
+const navItems = [
+  { name: 'Home', path: '/' },
+  { name: 'Culture', path: '/culture' },
+  { name: 'Destinations', path: '/destinations' },
+  { name: 'Travel', path: '/travel' },
+  { name: 'Contact', path: '/contact' }, // fixed typo
+]
 
 const NavBar = () => {
   return (
-    <nav>
-      <NavLink to="/" >Home</NavLink> 
-      <NavLink to="/culture" >Culture</NavLink>
-      <NavLink to="/destinations" >Destinations</NavLink>
-      <NavLink to="/travel" >Travel</NavLink>
-      <NavLink to="/contaatc" >Contact</NavLink>
-    </nav>
+    <Box bg="green" w="100%" p="20px" color="white" justifyItems="center" fontSize="20px">
+      <nav>
+        <HStack gap="45px" color="#D2B48C">
+          {navItems.map((item) => (
+            <NavLink
+              key={item.path}
+              to={item.path}
+              style={{ color: '#D2B48C', textDecoration: 'none', fontWeight: 'bold' }}
+            >
+              {item.name}
+            </NavLink>
+          ))}
+        </HStack>
+      </nav>
+    </Box>
   )
 }
 
