@@ -1,10 +1,11 @@
 import React from 'react'
+import TouristGuidance from '../components/TouristGuidance/TouristGuidance'
 
 const Travel = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+    <TouristGuidance/>
+    </>
   )
 }
 
