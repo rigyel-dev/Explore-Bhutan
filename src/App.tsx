@@ -2,14 +2,17 @@
 import NavBar from "./components/NavBar"
 import AppRoutes from "./components/AppRoutes"
 
-function App() {
+
+
+const App = () => {
 
   return (
-    <>
+    <div>
+     
     <NavBar/>
     <AppRoutes/>
+    </div>
 
-    </>
   )
 }
 
