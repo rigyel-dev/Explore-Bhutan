@@ -142,3 +142,4 @@ const TouristGuidance: React.FC = () => {
 };
 
 export default TouristGuidance;
+// added info
