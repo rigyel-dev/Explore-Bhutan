@@ -4,7 +4,7 @@ const ThimphuTshechu = () => {
   return (
      <Box  p="6" rounded="md" order={2} flex="1" textAlign="justify">
               <Heading size="xl">2. Thimphu Tshechu</Heading>
-              <Image rounded="md" src="https://cdn.drukasia.com/content/images/media/drukasia_021617_dsc05035-1070x737.jpg" height="400px" py="20px" />
+              <Image rounded="md" src="https://cdn.drukasia.com/content/images/media/drukasia_021617_dsc05035-1070x737.jpg" height="400px" py="20px" loading="lazy" />
               <Text margin="18px">Thimphu Tshechu is the biggest and the most popular festival of Bhutan. 
                 This is also called the national festival of Bhutan where thousands of people flock down, 
                 all decked up in fine colorful attires to be a part of the festivities. There are colors,

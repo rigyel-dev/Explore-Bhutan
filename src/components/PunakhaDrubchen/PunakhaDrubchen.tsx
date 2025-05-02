@@ -5,7 +5,7 @@ const PunakhaDrubchen = () => {
   return (
     <Box  p="6" rounded="md" order={1} flex="1" textAlign="justify">
               <Heading size="xl">1. Punakha Drubchen</Heading>
-              <Image rounded="md" src="https://www.heavenlybhutan.com/wp-content/uploads/2018/07/Folk-festival-37-1024x683.jpg" height="400px" py="20px" />
+              <Image rounded="md" src="https://www.heavenlybhutan.com/wp-content/uploads/2018/07/Folk-festival-37-1024x683.jpg" height="400px" py="20px" loading="lazy"/>
               <Text margin="18px">Out of all the festivals in Bhutan, Punakha Drubchen is most unique. It is about recreation of some consequential 
                 scenes and moments from the Tibetan Army battle of 17th Century. The local military officials recreate and re-enact the
                  scenes dressed in full battle gear complete with swords. It is to celebrate the victory and to pay tribute to the villagers 
