@@ -4,7 +4,7 @@ import React from 'react'
 const JambayDrupFestival = () => {
   return (
     <Box  p="6" rounded="md" order={3} flex="1" textAlign="justify">
-    <Heading size="2xl">3. Jambay Lhakhang Drup Festival</Heading>
+    <Heading size="xl">3. Jambay Lhakhang Drup Festival</Heading>
 <Image rounded="md" src="https://www.breathebhutan.com/wp-content/uploads/2019/10/Jambay-Lhakhang-Drup-Bhutan-Festival.jpg" height="400px" py="20px" />
 <Text margin="18px">Naked dancing, fire dancing, mask dancing – Jambay Lhakhang Drup has it all. One of the main festival of Bhutan,
      there are traditional dances are performed to celebrate the foundation of Jambay Lhakhang Monastery and to honor Guru Rimpoche.
