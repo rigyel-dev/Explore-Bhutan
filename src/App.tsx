@@ -1,8 +1,12 @@
 import NavBar from "./components/NavBar"
 import AppRoutes from "./components/AppRoutes"
+
 import { ToastContainer } from "react-toastify"
+
 import { Box } from "@chakra-ui/react"
 import Footer from "./components/Footer"
+
+
 
 
 function App() {
