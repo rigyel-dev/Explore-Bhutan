@@ -31,6 +31,21 @@ const testimonials2 = [
   },
 ];
 
+const testimonials3 = [
+  {
+    name: 'Alex Brown',
+    feedback: 'Truly a game changer for our business. Love it!',
+  },
+  {
+    name: 'Lisa Black',
+    feedback: 'Amazing tools and fantastic results.',
+  },
+  {
+    name: 'Tom Grey',
+    feedback: 'Reliable and easy to use. Highly recommend.',
+  },
+];
+
 const TestimonialCarousel = () => {
   const [index, setIndex] = useState(0);
 
@@ -48,23 +63,24 @@ const TestimonialCarousel = () => {
       display="flex"
       justifyContent="center"
       alignItems="center"
-      gap={300}
+      gap={16}  // Adjust gap as needed between boxes
       bg="gray.50"
       py={{ base: 5, md: 10 }}
       border="1px solid gray"
       borderRadius="xl"
       m={4}
+      flexWrap="wrap"  // allows wrapping on small screens
     >
       <Box
         className="testimonial-text fade"
-        width="300px"      // fixed width
-        height="200px"     // fixed height
+        width="300px"
+        height="200px"
         textAlign="center"
         p={4}
         borderWidth="1px"
         borderRadius="md"
         boxShadow="md"
-        overflow="hidden"  // prevents overflow if text is long
+        overflow="hidden"
         display="flex"
         flexDirection="column"
         justifyContent="center"
@@ -76,8 +92,8 @@ const TestimonialCarousel = () => {
       </Box>
       <Box
         className="testimonial-text fade"
-        width="300px"      // fixed width
-        height="200px"     // fixed height
+        width="300px"
+        height="200px"
         textAlign="center"
         p={4}
         borderWidth="1px"
@@ -91,6 +107,25 @@ const TestimonialCarousel = () => {
         <p>"{testimonials2[index].feedback}"</p>
         <p className="testimonial-name" style={{ marginTop: '10px', fontWeight: 'bold' }}>
           - {testimonials2[index].name}
+        </p>
+      </Box>
+      <Box
+        className="testimonial-text fade"
+        width="300px"
+        height="200px"
+        textAlign="center"
+        p={4}
+        borderWidth="1px"
+        borderRadius="md"
+        boxShadow="md"
+        overflow="hidden"
+        display="flex"
+        flexDirection="column"
+        justifyContent="center"
+      >
+        <p>"{testimonials3[index].feedback}"</p>
+        <p className="testimonial-name" style={{ marginTop: '10px', fontWeight: 'bold' }}>
+          - {testimonials3[index].name}
         </p>
       </Box>
     </Box>
