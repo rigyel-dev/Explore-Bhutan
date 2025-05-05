@@ -1,10 +1,18 @@
-import { Box, Text, Image, VStack, Heading, Flex, Button, Input } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
+import {
+  Box,
+  Text,
+  Image,
+  VStack,
+  Heading,
+  Flex,
+  Input,
+  Link as ChakraLink,
+} from "@chakra-ui/react";
 import { useState } from "react";
 
 const DestinationCard = () => {
   const [searchQuery, setSearchQuery] = useState("");
-  
+
   const destinations = [
     {
       name: "Paro Taktsang",
@@ -56,71 +64,86 @@ const DestinationCard = () => {
     },
   ];
 
-  // Filter the destinations based on the search query
   const filteredDestinations = destinations.filter((destination) =>
     destination.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
-  const handleSearch = () => {
-    console.log("Searching for:", searchQuery);
-    // The filtering happens automatically as we update the state.
-  };
-
   return (
-    <Box>
-      <Flex justify="center" mb={6}>
+    
+    <Box mb={9}>
+      <Flex justify="center" mb={6} >
         <Input
           placeholder="Search destinations"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           width="300px"
-          mr={2}
         />
-        <Button colorScheme="teal" onClick={handleSearch}>
-          Search
-        </Button>
       </Flex>
 
       <Flex justify="center" gap={4} flexWrap="wrap" px={4}>
-        {filteredDestinations.map((destination, index) => (
+        {filteredDestinations.length > 0 ? (
+          filteredDestinations.map((destination, index) => (
+            <Box
+              key={index}
+              maxW="sm"
+              w="100%"
+              borderWidth="1px"
+              borderRadius="lg"
+              overflow="hidden"
+              display="flex"
+              flexDirection="column"
+            >
+              <Image
+                src={destination.imageUrl}
+                alt={destination.name}
+                height="200px"
+                width="100%"
+                objectFit="cover"
+              />
+              <Box p="6" flexGrow={1}>
+                <VStack align="start" spaceX={3}>
+                  <Heading size="md">{destination.name}</Heading>
+                  <Text fontSize="sm">
+                    {destination.description}{" "}
+                    {destination.link && (
+                      <ChakraLink
+                        href={destination.link}
+                        color="teal.500"
+                        isExternal
+                      >
+                        View more
+                      </ChakraLink>
+                    )}
+                  </Text>
+                </VStack>
+              </Box>
+            </Box>
+          ))
+        ) : (
           <Box
-            key={index}
             maxW="sm"
             w="100%"
             borderWidth="1px"
             borderRadius="lg"
             overflow="hidden"
-            height="100%"
-            display="flex"
-            flexDirection="column"
+            textAlign="center"
+
           >
             <Image
-              src={destination.imageUrl}
-              alt={destination.name}
-              height="200px"
+              src="src/assets/noimage.png"
+              alt="Not found"
+              height="400px"
               width="100%"
               objectFit="cover"
             />
-            <Box p="6" flexGrow={1}>
-              <VStack align="start" spaceX={3}>
-                <Heading size="md">{destination.name}</Heading>
-                <Text fontSize="sm">
-                  {destination.description}{" "}
-                  {destination.link && (
-                    <Link
-                      to={destination.link}
-                      color="teal.500"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      View more
-                    </Link>
-                  )}
-                </Text>
-              </VStack>
+            <Box p="6">
+              <Heading size="md">No Destination Found</Heading>
+              <Text fontSize="sm">
+                We couldn't find any destinations matching your search.
+              </Text>
             </Box>
           </Box>
-        ))}
+        )}
       </Flex>
     </Box>
   );
