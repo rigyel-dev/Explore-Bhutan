@@ -90,6 +90,19 @@ const TouristGuidance: React.FC = () => {
           "Always walk clockwise around chortens (stupas) and prayer wheels.",
           "Do not take photographs inside temples unless permitted."
         ]
+      },
+      {
+        title: "Working Visa :",
+        items: [
+          " You must have a confirmed offer from a Bhutanese employer.",
+          " Employer applies for Labour Recruitment Approval from the Department of Labour.",
+          "After approval, the employer applies for an Employment Visa from the Department of Immigration.",
+          "You can enter Bhutan only after the Employment Visa is issued.",
+          "After arrival, you must apply for a Work Permit to legally work in Bhutan.",
+          "Employer must apply for an E-Work Permit.",
+          "A Work Permit is usually issued for up to 1 year..",
+          "Renew permits before they expire to avoid penalties."
+        ]
       }
     ]
   };
@@ -123,6 +136,20 @@ const TouristGuidance: React.FC = () => {
           "Buddhist rituals are an important part of daily life. Do not interrupt religious ceremonies or events.",
           "It is respectful to present gifts using both hands as a sign of reverence.",
           "When offering or accepting something from a Bhutanese person, use your right hand or both hands—using the left hand alone can be considered impolite."
+          
+        ]
+      },
+      {
+        title: " Tourist Visa:",
+        items: [
+          "Forwarding letter from the head of the Department addressed to Dy. Chief of Protocol).",
+          "Notesheet from the concern Ministry.",
+          "It is respectful to present gifts using both hands as a sign of reverence.",
+          "Filled up Visa application form (need to be filled up by the guests only).",
+          "India: Indian nationals do not require a visa to enter Bhutan.",
+          "Bangladesh & Maldives: Citizens of these countries can obtain a visa on arrival.",
+          "Visa Application Fee: USD $40 (non-refundable).",
+          "Sustainable Development Fee (SDF): USD $100 per person per night (concessionary rates apply for children)."
         ]
       }
     ]
@@ -131,7 +158,7 @@ const TouristGuidance: React.FC = () => {
   return (
     <Box p="6" rounded="md" border="1px solid gray" borderRadius="xl" m="4">
       <Heading textAlign="center" mb="6">
-        <strong>Dos And Don’ts</strong>
+        <strong>Tourist Guidance</strong>
       </Heading>
       <Flex gap="4" flexDirection={{ base: "column", md: "row" }}>
         <GuidanceColumn {...column1} />
