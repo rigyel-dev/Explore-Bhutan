@@ -1,1 +1,23 @@
+.carousel-container {
+  margin: 0 auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
 
+.testimonial-text {
+  margin: 20px 0;
+  font-size: 18px;
+  font-style: italic;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.testimonial-name {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* This ensures the currently active testimonial fades in */
+.fade {
+  opacity: 1;
+}

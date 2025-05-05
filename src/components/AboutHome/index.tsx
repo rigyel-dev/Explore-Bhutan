@@ -10,7 +10,7 @@ const AboutHome = () => {
       m={4} // optional: adds horizontal margin
     >
       <Container maxW="6xl">
-        <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10} alignItems="center">
+        <SimpleGrid columns={{ base: 1, md: 2 }} gap={10} alignItems="center">
           {/* Image */}
           <Image
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqEOxA2b6tJvcbmPtzT2v983yaExfU7d7yGg&s"
@@ -22,7 +22,7 @@ const AboutHome = () => {
           />
 
           {/* Text Content */}
-          <Stack spacing={6} textAlign={{ base: "center", md: "left" }}>
+          <Stack gap={6} textAlign={{ base: "center", md: "left" }}>
             <Heading
               fontSize={{ base: "2xl", md: "4xl" }}
               fontWeight="bold"
