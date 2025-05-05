@@ -13,6 +13,7 @@ const Banner = () => {
       color="white"
       textAlign="center"
       px={4}
+      loading="lazy"
     >
       <VStack gap={4} mb={40}>
         <Heading fontSize={["3xl", "4xl", "6xl"]} color={"teal.500"} >Explore Bhutan</Heading>

@@ -1,13 +1,14 @@
 import NavBar from "./components/NavBar"
 import AppRoutes from "./components/AppRoutes"
 
-import './index.css'
+import { ToastContainer } from "react-toastify"
 import { Box } from "@chakra-ui/react"
 import Footer from "./components/Footer"
 
 const App=()=> {
   return (
     <Box minH="100vh" display="flex" flexDirection="column">
+
       <NavBar />
 
       
@@ -17,7 +18,9 @@ const App=()=> {
 
      
       <Footer />
+      <ToastContainer position="bottom-right" autoClose={5000}/>
     </Box>
+
   )
 }
 
