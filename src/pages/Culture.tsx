@@ -1,4 +1,4 @@
-import { Box, Center, Flex, Heading, Image } from '@chakra-ui/react'
+import {  Center, Flex, Heading } from '@chakra-ui/react'
 import ThimphuTshechu from '../components/ThimphuTshechu/ThimphuTshechu'
 import JambayDrupFestival from '../components/JambayDrupFestival/JambayDrupFestival'
 import PunakhaDrubchen from '../components/PunakhaDrubchen/PunakhaDrubchen'

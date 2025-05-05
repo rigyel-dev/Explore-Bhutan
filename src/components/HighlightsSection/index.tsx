@@ -45,7 +45,7 @@ const Highlights = () => {
         Top Destinations of Bhutan
       </Heading>
 
-      <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={8}>
+      <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} gap={8}>
         {destinations.map((dest) => (
           <Box
             key={dest.name}
@@ -71,7 +71,7 @@ const Highlights = () => {
               />
             </Box>
             <Box p={5}>
-              <Stack spacing={3}>
+              <Stack gap={3}>
                 <Heading fontSize="xl" color="teal.500">
                   {dest.name}
                 </Heading>

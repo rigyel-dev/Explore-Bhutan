@@ -1,5 +1,5 @@
 import { Box, Image, Heading, Text  } from '@chakra-ui/react'
-import React from 'react'
+
 
 const JambayDrupFestival = () => {
   return (

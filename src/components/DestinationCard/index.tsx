@@ -106,14 +106,16 @@ const DestinationCard = () => {
                   <Text fontSize="sm">
                     {destination.description}{" "}
                     {destination.link && (
-                      <ChakraLink
-                        href={destination.link}
-                        color="teal.500"
-                        isExternal
-                      >
-                        View more
-                      </ChakraLink>
-                    )}
+                    <ChakraLink
+                      href={destination.link}
+                      color="teal.500"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      View more
+                    </ChakraLink>
+                  )}
+
                   </Text>
                 </VStack>
               </Box>
