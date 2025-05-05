@@ -1,5 +1,4 @@
 import { Box, HStack } from '@chakra-ui/react'
-import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 const navItems = [
@@ -12,6 +11,7 @@ const navItems = [
 
 const NavBar = () => {
   return (
+  
     <Box bg="green" w="100%" p="20px" color="white" justifyItems="center" fontSize="20px">
       <nav>
         <HStack gap="45px" color="#D2B48C">
