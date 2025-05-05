@@ -4,11 +4,11 @@ import AppRoutes from "./components/AppRoutes"
 
 
 import { ToastContainer } from "react-toastify"
-
-function App() {
-
 import { Box } from "@chakra-ui/react"
 import Footer from "./components/Footer"
+import DestinationPage from "./components/DestinationPage"
+
+
 
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
 
     <Box minH="100vh" display="flex" flexDirection="column">
       <NavBar />
-
+     
       {/* Main content takes remaining space */}
       <Box flex="1">
         <AppRoutes />
