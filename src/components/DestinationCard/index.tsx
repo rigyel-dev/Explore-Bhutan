@@ -9,6 +9,7 @@ import {
   Link as ChakraLink,
 } from "@chakra-ui/react";
 import { useState } from "react";
+import notfound from "../../assets/noimage.png"
 
 const DestinationCard = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -132,7 +133,7 @@ const DestinationCard = () => {
 
           >
             <Image
-              src="src/assets/noimage.png"
+              src={notfound}
               alt="Not found"
               height="400px"
               width="100%"
