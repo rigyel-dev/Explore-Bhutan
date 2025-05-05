@@ -14,9 +14,9 @@ const Banner = () => {
       textAlign="center"
       px={4}
     >
-      <VStack gap={4} >
-        <Heading fontSize={["3xl", "4xl", "6xl"]}>Explore Bhutan</Heading>
-        <Text fontSize={["md", "lg", "xl"]}>Where beauty meets peace.</Text>
+      <VStack gap={4} mb={40}>
+        <Heading fontSize={["3xl", "4xl", "6xl"]} color={"teal.500"} >Explore Bhutan</Heading>
+        <Text fontSize={["md", "lg", "xl"]} color={"teal.500"} >Where beauty meets peace.</Text>
       </VStack>
     </Box>
   );

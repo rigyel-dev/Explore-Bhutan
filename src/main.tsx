@@ -5,6 +5,8 @@ import App from './App.tsx'
 import { ChakraProvider, defaultSystem } from '@chakra-ui/react'
 import { BrowserRouter } from 'react-router-dom'
 
+
+
 createRoot(document.getElementById('root')!).render(
   
   <StrictMode>
