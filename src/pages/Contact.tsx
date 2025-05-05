@@ -5,20 +5,19 @@ import { Box } from '@chakra-ui/react';
 
 const Contact = () => {
   return (
-    <Box>
     <Flex
-       height= '100%'
+       height= '100vh'
        minHeight= '100vh' 
       justify="center"
       align="center"
       gap={32} 
+      my={16}
     >
       <ContactForm />
       <Box ml={-12}>
       <ContactDetail />
       </Box>
     </Flex>
-    </Box>
   )
 }
 

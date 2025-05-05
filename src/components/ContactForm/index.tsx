@@ -45,7 +45,7 @@ const ContactForm = () => {
   };
 
   return (
-    <Box bg="#5dbb63" p={10} borderRadius="md" shadow="lg" w="40%">
+    <Box bg="#5dbb63" p={10} my={16} borderRadius="md" shadow="lg" w="40%">
       <Heading size="lg" mb={6} color="white">
         Contact Us
       </Heading>
@@ -60,7 +60,7 @@ const ContactForm = () => {
             required
           />
           <Textarea placeholder="Your Message" name="message" bg="white" rows={5} required />
-          <Button bg="cyan.600" mt={2} w="fit-content" type="submit" disabled={isSubmitting}>
+          <Button bg="#A97C50" mt={2} w="fit-content" type="submit" disabled={isSubmitting}>
             {isSubmitting ? "Sending..." : "Submit"}
           </Button>
         </Stack>

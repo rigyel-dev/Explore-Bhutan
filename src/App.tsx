@@ -18,7 +18,7 @@ function App() {
 
       {/* Footer stays at the bottom */}
       <Footer />
-      <ToastContainer/>
+      <ToastContainer position="bottom-right" autoClose={5000}/>
     </Box>
 
   )
