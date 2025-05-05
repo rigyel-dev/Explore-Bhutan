@@ -1,17 +1,15 @@
 .carousel-container {
-  max-width: 500px;
   margin: 0 auto;
-  padding: 20px;
   text-align: center;
   font-family: Arial, sans-serif;
-  position: relative;
 }
 
 .testimonial-text {
+  margin: 20px 0;
   font-size: 18px;
   font-style: italic;
-  margin-bottom: 20px;
-  transition: opacity 1s ease-in-out; /* Transition effect */
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 
 .testimonial-name {
@@ -19,19 +17,7 @@
   margin-top: 10px;
 }
 
-.carousel-container p {
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-}
-
-.carousel-container p:nth-child(1) {
-  opacity: 1;
-}
-
-.carousel-container p:nth-child(2) {
-  opacity: 1;
-}
-
-.carousel-container p:nth-child(3) {
+/* This ensures the currently active testimonial fades in */
+.fade {
   opacity: 1;
 }
