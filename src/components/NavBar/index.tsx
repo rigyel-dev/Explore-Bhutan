@@ -1,5 +1,4 @@
 import { Box, HStack } from '@chakra-ui/react'
-import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 const navItems = [
@@ -12,14 +11,15 @@ const navItems = [
 
 const NavBar = () => {
   return (
+  
     <Box bg="green" w="100%" p="20px" color="white" justifyItems="center" fontSize="20px">
       <nav>
-        <HStack gap="45px" color="#D2B48C">
+        <HStack gap="45px" color="white">
           {navItems.map((item) => (
             <NavLink
               key={item.path}
               to={item.path}
-              style={{ color: '#D2B48C', textDecoration: 'none', fontWeight: 'bold' }}
+              style={{ color: 'white', textDecoration: 'none', fontWeight: 'bold' }}
             >
               {item.name}
             </NavLink>

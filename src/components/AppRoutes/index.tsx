@@ -1,4 +1,3 @@
-import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from '../../pages/Home';
 import Culture from '../../pages/Culture';
@@ -16,7 +15,7 @@ const AppRoutes = () => {
       <Route path="/culture" element={<Culture />} />
       <Route path="/destinations" element={<Destinations />} />
       <Route path="/travel" element={<Travel />} />
-      <Route path="/contaatc" element={<Contact />} />
+      <Route path="/contact" element={<Contact />} />
 
       
     </Routes>
