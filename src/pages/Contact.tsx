@@ -1,7 +1,6 @@
-import { Flex } from 'antd';
 import ContactDetail from '../components/ContactDetail'
 import ContactForm from '../components/ContactForm'
-import { Box } from '@chakra-ui/react';
+import { Box, Flex } from '@chakra-ui/react';
 
 const Contact = () => {
   return (
