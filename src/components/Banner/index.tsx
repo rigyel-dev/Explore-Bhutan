@@ -21,6 +21,7 @@ const Banner = () => {
       px={4}
       transition="background-image 0.5s ease-in-out"
     >
+      
       {/* This hidden image actually does the lazy loading */}
       <Image
         src={bgUrl}
@@ -29,7 +30,7 @@ const Banner = () => {
         onLoad={() => setIsBgLoaded(true)}
       />
 
-      <VStack gap={4} mb={40}>
+      <VStack gap={4} mb={500}>
         <Heading fontSize={["3xl", "4xl", "6xl"]} color={"teal.500"}>
           Explore Bhutan
         </Heading>
