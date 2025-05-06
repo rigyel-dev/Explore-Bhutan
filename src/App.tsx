@@ -8,6 +8,7 @@ import Footer from "./components/Footer"
 function App() {
   return (
     <Box minH="100vh" display="flex" flexDirection="column">
+
       <NavBar />
 
       {/* Main content takes remaining space */}

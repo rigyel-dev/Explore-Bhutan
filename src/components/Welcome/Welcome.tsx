@@ -3,7 +3,7 @@ import { Box, Flex, Group, Heading, Image, Text } from "@chakra-ui/react"
 const Welcome = () => {
   return (
     <Box marginBottom={'6'} marginLeft={'12px'} w={'90%'} mx={'auto'}  mt={4} border="1px solid gray" borderRadius="xl">
-        <Heading  size="xl" textAlign="center">Introduction</Heading>
+        
          <Flex gap="4">
             <Box  p="6" rounded="md" order={1} flex="1" textAlign="justify">
                 <Image rounded="md" src="https://bhutan.com.au/wp-content/uploads/2019/02/Festival-dancers.jpg"
